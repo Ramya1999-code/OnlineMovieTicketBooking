@@ -13,7 +13,7 @@ public class MovieTicketBooking {
 		 static String [] movieList= {"1)Avengers End Game", "2)Shershah", "3)Doctor", "4)KGF ", "5)Thor"};
  public static void getname() {
 	 String name;
-	 System.out.println(" Welcome PVR CINEMAS");
+	 System.out.println("Welcome PVR CINEMAS");
 	 System.out.println("Enter your name: ");
 	 name = sc.nextLine();
 	 System.out.println("Hi "+name);
@@ -22,31 +22,32 @@ public class MovieTicketBooking {
 	 
  }
  public static void getmovie() {
-	 System.out.println("Select the movie from your List: ");
+	
+	 System.out.println("Please select the movie to watch: ");
 	 for(int i=0; i<movieList.length; i++) {
 		 System.out.println(movieList[i]);
 		
 	 }
 	 int choice = sc.nextInt();
-	 System.out.println("Please select to watch: ");
-	 System.out.println(movieList[choice-1]); //movie number will not show 
+	 
+	 System.out.println(movieList[choice-1]);  
 	 getseat();
 	 
  }
  
  public static void getseat() {
 	 int n;
-	 System.out.println("how many seat you want you have please Select");
+	 System.out.println("how many seat you want please Select");
 	 n= sc.nextInt();
 	 int [] arr = new int[n];
-System.out.println("Which seat number you want to have choose it");
+System.out.println("Which seat number you want choose it");
 for ( int i=0; i<n; i++) {
 	arr[i] =sc.nextInt();
 	
 }
 
 int amount =n*150;// 1 ticket cost is 150
-System.out.println("Total amount  to pay: "+amount);
+System.out.println("Total amount to pay: "+amount);
 System.out.println("Please select your payment app to pay");
 
 int app=1;
@@ -89,4 +90,6 @@ while(app==1) {
 
 
 
+	
 
+	
