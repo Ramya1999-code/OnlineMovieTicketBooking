@@ -10,7 +10,7 @@ public class MovieTicketBooking {
 	}
  class Demo{
 		static Scanner sc = new Scanner(System.in);
-		 static String [] movieList= {"1)Avengers End Game", "2)Shershah", "3)Doctor", "4)KGF 2", "5)Thor"};
+		 static String [] movieList= {"1)Avengers End Game", "2)Shershah", "3)Doctor", "4)KGF ", "5)Thor"};
  public static void getname() {
 	 String name;
 	 System.out.println(" Welcome PVR CINEMAS");
